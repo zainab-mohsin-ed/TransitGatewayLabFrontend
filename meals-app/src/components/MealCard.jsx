@@ -11,19 +11,6 @@ export default function MealCard({
   const [readMore, setReadMore] = useState(false);
   
   const mealsData = JSON.parse(mealJSON);
-  console.log(mealsData.imageUrl);
-
-  const validJsonString = mealsData.ingredients.replace(/'/g, '"').replace(/½/g, "\u00BD").replace(/¾/g, "\u00BE");
-
-  console.log(validJsonString);
-
-  // Parse the JSON string to an array
-  const ingredientsArray = JSON.parse(validJsonString);
-
-  // Log the array to the console
-  console.log(ingredientsArray);
-  const firstColumn = ingredientsArray.slice(0, 6);
-  const secondColumn = ingredientsArray.slice(6);
 
   const toggleReadMore = () => {
     setReadMore(!readMore);
@@ -39,7 +26,7 @@ export default function MealCard({
             <Col xs={4}>
               <Card.Img
                 variant="top"
-                src={mealsData.imageUrl}
+                src={mealsData.image_name}
                 alt="Image Not Found"
                 style={{ height: '100%', width: '100%', objectFit: 'cover' }}
               />

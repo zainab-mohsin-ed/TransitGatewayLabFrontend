@@ -25,7 +25,7 @@ export default function useFetch(queryField, queryAttributesStr) {
     async function fetchData() {
       try {
         const signal = controller.signal;
-        const response = await axios.get('http://localhost:3002/api/getmeals', { signal });
+        const response = await axios.get('/api/getmeals', { signal });
         console.log(response)
 
         // Checking if the request was a success

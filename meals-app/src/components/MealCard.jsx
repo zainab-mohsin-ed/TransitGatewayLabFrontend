@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './styles.css';
 
 export default function MealCard({
   mealJSON, setTitle, setUrl, setImgUrl, setId,

@@ -16,14 +16,16 @@ function CardList({
       if (type === 'meals') {
         return (
           <Col key={object.ID} xs={12} style={{ marginBottom: '20px' }}>
-            <MealCard
-              mealJSON={dataObjStr}
-              setField={setField}
-              setTitle={setTitle}
-              setIngredients={setIngredients}
-              setImgUrl={setImgUrl}
-              setInstrcutions={setInstructions}
-            />
+            <div className="colored-card card-hover">
+              <MealCard
+                mealJSON={dataObjStr}
+                setField={setField}
+                setTitle={setTitle}
+                setIngredients={setIngredients}
+                setImgUrl={setImgUrl}
+                setInstructions={setInstructions}
+              />
+            </div>
           </Col>
         );
       }

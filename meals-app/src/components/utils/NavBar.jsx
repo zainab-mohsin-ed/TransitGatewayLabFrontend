@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <Navbar className="justify-content-start fixed-top navbar-color" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand className="text-navbar-title"><b>Courses on Educative</b></Navbar.Brand>
+        <Navbar.Brand className="text-navbar-title"><b>Meals</b></Navbar.Brand>
       </Container>
     </Navbar>
   );
